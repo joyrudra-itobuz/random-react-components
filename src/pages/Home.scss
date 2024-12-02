@@ -1,0 +1,74 @@
+$gradient: linear-gradient(45deg, #ff9a9e, #fad0c4);
+$gradient2: linear-gradient(123deg, #d14600 0%, #c300e0 50%, #6842ff 100%);
+
+.amazon-card-wrapper {
+  position: relative;
+  cursor: pointer;
+
+  > div {
+    transition: all 0.3s;
+    box-shadow: inset 0 0 20px 5px rgba(127, 255, 212, 0);
+
+    .arrow-linker {
+      transition: all 0.3s;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $gradient2;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(127, 255, 212, 0.5),
+      rgba(0, 128, 255, 0.5)
+    );
+    filter: blur(10px);
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover > div {
+    box-shadow: inset 0 0 20px 5px rgba(127, 255, 212, 0);
+
+    p,
+    h2,
+    span {
+      background: $gradient2;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .arrow-linker {
+      gap: 5px;
+      flex-grow: 1;
+
+      div {
+        background: $gradient2;
+        flex-grow: 1;
+      }
+    }
+  }
+}
