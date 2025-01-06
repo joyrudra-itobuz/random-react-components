@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+import Home from "./pages/Aws/Aws";
 import "./App.scss";
 
 export default function App() {

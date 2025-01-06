@@ -1,5 +1,5 @@
 import { FaAnglesRight } from "react-icons/fa6";
-import "./Home.scss";
+import "./Aws.scss";
 
 export default function Home() {
   return (
