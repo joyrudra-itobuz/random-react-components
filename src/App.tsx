@@ -1,6 +1,10 @@
-import Home from "./pages/Aws/Aws";
 import "./App.scss";
+import Router from "./Router";
 
 export default function App() {
-  return <Home />;
+  return (
+    <div>
+      <Router />
+    </div>
+  );
 }

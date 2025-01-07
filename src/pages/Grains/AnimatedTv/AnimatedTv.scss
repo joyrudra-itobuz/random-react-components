@@ -1,0 +1,23 @@
+.animated-tv-container {
+  background-color: rgb(231, 157, 173);
+  height: 100vh;
+  width: 100vw;
+
+  .grainy {
+    background-image: url("/backgrounds/grain.jpg");
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: overlay;
+    opacity: 1;
+    animation: grain-shifting 0.3s infinite linear;
+  }
+
+  @keyframes grain-shifting {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+}

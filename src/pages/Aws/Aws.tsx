@@ -1,7 +1,7 @@
 import { FaAnglesRight } from "react-icons/fa6";
 import "./Aws.scss";
 
-export default function Home() {
+export default function Aws() {
   return (
     <div className="flex h-dvh w-dvw items-center justify-center">
       <AmazonCard />
