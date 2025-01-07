@@ -13,12 +13,16 @@ const routes = [
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex items-center justify-center h-screen gap-5">
       {routes.map((route) => {
         return (
-          <div key={route.path}>
-            <Link to={route.path}>{route.name}</Link>
-          </div>
+          <Link
+            className="cursor-pointer px-2 py-1 bg-blue-500 text-white rounded-xl hover:brightness-125"
+            key={route.path}
+            to={route.path}
+          >
+            {route.name}
+          </Link>
         );
       })}
     </div>
