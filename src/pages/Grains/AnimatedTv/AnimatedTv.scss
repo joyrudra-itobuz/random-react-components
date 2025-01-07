@@ -1,23 +1,41 @@
 .animated-tv-container {
-  background-color: rgb(231, 157, 173);
-  height: 100vh;
-  width: 100vw;
+  height: 300px;
+  width: 400px;
+  border-radius: 2rem;
+  position: relative;
+  filter: drop-shadow(0 30px 20px rgba(0, 0, 0, 0.3));
 
   .grainy {
     background-image: url("/backgrounds/grain.jpg");
+    margin-top: 2rem;
     height: 100%;
     width: 100%;
     mix-blend-mode: overlay;
     opacity: 1;
-    animation: grain-shifting 0.3s infinite linear;
+    pointer-events: none;
+    animation: grain-shifting 0.5s steps(10) infinite;
   }
 
   @keyframes grain-shifting {
-    0% {
+    from {
       background-position: 0 0;
     }
-    100% {
+    to {
       background-position: 100% 100%;
     }
+  }
+
+  @keyframes wave {
+    0%,
+    100% {
+      transform: perspective(1000px) rotateX(180deg) translateY(0);
+    }
+    50% {
+      transform: perspective(1000px) rotateX(180deg) translateY(5px);
+    }
+  }
+
+  .animate-wave {
+    animation: wave 3s ease-in-out infinite;
   }
 }
