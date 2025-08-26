@@ -9,6 +9,10 @@ const routes = [
     name: "Grains",
     path: "/grains",
   },
+  {
+    name: "Mac Like",
+    path: "/mac-like",
+  },
 ];
 
 export default function Home() {
