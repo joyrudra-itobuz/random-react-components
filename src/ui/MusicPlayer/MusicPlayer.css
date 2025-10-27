@@ -1,0 +1,128 @@
+/* Spotify-inspired Range Slider Styles */
+.music-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 4px;
+}
+
+.music-range::-webkit-slider-track {
+  background: #4f4f4f;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.music-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.music-range:hover::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+.music-range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.music-range::-moz-range-track {
+  background: #4f4f4f;
+  height: 4px;
+  border-radius: 2px;
+  border: none;
+}
+
+.music-range::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.music-range::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Volume Range Slider - Spotify Style */
+.volume-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 4px;
+}
+
+.volume-range::-webkit-slider-track {
+  background: #4f4f4f;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.volume-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.volume-range:hover::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+.volume-range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.volume-range::-moz-range-track {
+  background: #4f4f4f;
+  height: 4px;
+  border-radius: 2px;
+  border: none;
+}
+
+.volume-range::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.volume-range::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Spotify Button Hover Effects */
+.spotify-button {
+  transition: all 0.2s ease;
+}
+
+.spotify-button:hover {
+  transform: scale(1.06);
+}
+
+.spotify-button:active {
+  transform: scale(0.96);
+}
