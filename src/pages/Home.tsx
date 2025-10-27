@@ -13,6 +13,10 @@ const routes = [
     name: "Mac Like",
     path: "/mac-like",
   },
+  {
+    name: "Music Player",
+    path: "/music-player",
+  },
 ];
 
 export default function Home() {
